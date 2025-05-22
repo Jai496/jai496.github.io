@@ -3,95 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jai's Portfolio</title>
+  <title>Jai | Freelancer & IIIT-H Student</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
       color: white;
+    }
+    header {
       padding: 2rem;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
       text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
       background: linear-gradient(to right, #ec4899, #8b5cf6);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-    p {
-      color: #ccc;
-      font-size: 1.2rem;
-    }
-    .buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.5rem 1rem;
-      border: 2px solid #888;
-      border-radius: 8px;
-      text-decoration: none;
       color: white;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #111;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
       transition: 0.3s;
     }
-    .buttons a:hover {
-      background: #333;
-      border-color: #fff;
+    nav a:hover {
+      color: #fff;
     }
-    .card {
-      background: #222;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-top: 2rem;
-      text-align: left;
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      display: none;
     }
-    .card h2 {
+    section.active {
+      display: block;
+    }
+    h2 {
       color: #ec4899;
-      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
-    .card ul {
+    ul {
+      color: #ccc;
       padding-left: 1.5rem;
-      color: #aaa;
+    }
+    .contact a {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #8b5cf6;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Jai — Freelancer & IIIT-H Student</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showTab('about')">About Me</a>
+    <a href="#" onclick="showTab('services')">What I Offer</a>
+    <a href="#" onclick="showTab('contact')">Contact</a>
+  </nav>
+
+  <section id="about" class="active">
+    <h2>About Me</h2>
     <p>
-      Content Writer ✍️ | C/C++ Coder 💻 | App & Website Tester 🧪 | JEE Tutor 📚 | LTspice Circuit Simulations ⚡
+      I'm Jai, a BTech student at IIIT Hyderabad with a knack for tech, teaching, and clean communication.
+      Whether it's tutoring, testing, coding in C/C++, or writing content, I get the job done with quality and speed.
     </p>
-    <div class="buttons">
-      <a href="mailto:jaisrikar.m@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/jai-srikar-medarametla-1a42b4320" target="_blank">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Resume</a>
-    </div>
+    <p>
+      I work smart, stay curious, and love contributing to interesting projects. Let's build something cool.
+    </p>
+  </section>
 
-    <div class="card">
-      <h2>What I Offer</h2>
-      <ul>
-        <li>Technical & creative content writing</li>
-        <li>Detailed app/website QA testing reports</li>
-        <li>JEE-level tutoring in Maths & Physics</li>
-        <li>C/C++ programming assignments & scripts</li>
-        <li>LTspice circuit simulations and reports</li>
-      </ul>
-    </div>
+  <section id="services">
+    <h2>What I Offer</h2>
+    <ul>
+      <li>Technical & creative content writing</li>
+      <li>Detailed app/website QA testing reports</li>
+      <li>JEE-level tutoring in Maths & Physics</li>
+      <li>C/C++ programming help, assignments & mini projects</li>
+      <li>LTspice circuit simulations and analysis reports</li>
+    </ul>
+  </section>
 
-    <div class="card">
-      <h2>About Me</h2>
-      <p>
-        I’m Jai, a BTech student at IIIT Hyderabad with a passion for tech, teaching, and writing. I balance academics with freelancing to sharpen both creativity and problem-solving skills.
-      </p>
-      <p>
-        Always exploring new skills, staying consistent, and delivering results with a cool head.
-      </p>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <a href="mailto:jaisrikar.m@gmail.com">📧 jaisrikar.m@gmail.com</a>
+      <a href="https://www.linkedin.com/in/jai-srikar-medarametla-1a42b4320" target="_blank">🔗 LinkedIn</a>
     </div>
-  </div>
+  </section>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
 </body>
 </html>
