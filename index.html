@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jai | Freelancer & IIIT-H Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,56 +12,78 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
       color: white;
+      transition: all 0.3s ease-in-out;
     }
     header {
-      padding: 2rem;
+      padding: 2.5rem 1rem;
       text-align: center;
-      background: linear-gradient(to right, #ec4899, #8b5cf6);
+      background: linear-gradient(to right, #ff416c, #8b5cf6);
       color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
     header h1 {
       font-size: 3rem;
+      font-weight: 800;
     }
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background: #111;
+      background: #141414;
       padding: 1rem 0;
+      border-bottom: 1px solid #333;
     }
     nav a {
-      color: #ccc;
+      color: #aaa;
       text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      transition: background 0.3s, color 0.3s;
     }
     nav a:hover {
-      color: #fff;
+      background: #8b5cf6;
+      color: white;
     }
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      padding: 2rem;
+      padding: 2.5rem 1.5rem;
       display: none;
+      animation: fadeIn 0.5s ease forwards;
     }
     section.active {
       display: block;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     h2 {
-      color: #ec4899;
-      margin-bottom: 1rem;
+      color: #ff69b4;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    p, ul {
+      color: #ddd;
+      line-height: 1.6;
+      font-size: 1.1rem;
     }
     ul {
-      color: #ccc;
       padding-left: 1.5rem;
     }
+    li {
+      margin-bottom: 0.75rem;
+    }
     .contact a {
-      display: block;
-      margin-bottom: 0.5rem;
+      display: inline-block;
+      margin: 0.5rem 0;
       color: #8b5cf6;
+      font-weight: 600;
       text-decoration: none;
     }
     .contact a:hover {
@@ -83,11 +105,11 @@
   <section id="about" class="active">
     <h2>About Me</h2>
     <p>
-      I'm Jai, a BTech student at IIIT Hyderabad with a knack for tech, teaching, and clean communication.
-      Whether it's tutoring, testing, coding in C/C++, or writing content, I get the job done with quality and speed.
+      I'm Jai, a BTech student at IIIT Hyderabad with a sharp eye for tech, teaching, and clean communication.
+      Whether it's tutoring, testing, coding in C/C++, or content writing, I ensure smart, on-point delivery.
     </p>
     <p>
-      I work smart, stay curious, and love contributing to interesting projects. Let's build something cool.
+      Always curious and hands-on, I also work with LTspice for circuit simulations and love taking up new challenges.
     </p>
   </section>
 
@@ -105,7 +127,7 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <div class="contact">
-      <a href="mailto:jaisrikar.m@gmail.com">📧 jaisrikar.m@gmail.com</a>
+      <a href="mailto:jaisrikar.m@gmail.com">📧 jaisrikar.m@gmail.com</a><br>
       <a href="https://www.linkedin.com/in/jai-srikar-medarametla-1a42b4320" target="_blank">🔗 LinkedIn</a>
     </div>
   </section>
