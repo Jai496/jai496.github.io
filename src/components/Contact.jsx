@@ -25,7 +25,7 @@ const Contact = () => {
           </a>
           
           <a 
-            href="#" // Replace with your LinkedIn URL
+            href="www.linkedin.com/in/jai-srikar-medarametla-1a42b4320" // Replace with your LinkedIn URL
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition-colors group"
@@ -37,7 +37,7 @@ const Contact = () => {
           </a>
           
           <a 
-            href="#" // Replace with your GitHub URL
+            href="https://github.com/Jai496" // Replace with your GitHub URL
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-slate-300 hover:text-green-400 transition-colors group"
