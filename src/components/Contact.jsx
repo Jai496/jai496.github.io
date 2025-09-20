@@ -15,17 +15,17 @@ const Contact = () => {
         
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
           <a 
-            href="Gmail"
+            href="mailto:jaisrikar.m@gmail.com"
             className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition-colors group"
           >
             <div className="p-3 bg-slate-700 rounded-lg group-hover:bg-blue-600 transition-colors">
               <Mail size={24} />
             </div>
-            <span className="text-lg">jaisrikar.m@gmail.com</span>
+            <span className="text-lg">Gmail</span>
           </a>
           
           <a 
-            href="www.linkedin.com/in/jai-srikar-medarametla-1a42b4320" // Replace with your LinkedIn URL
+            href="https://www.linkedin.com/in/jai-srikar-medarametla-1a42b4320/" // Replace 'your-linkedin-username' with your actual LinkedIn username
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition-colors group"
@@ -37,7 +37,7 @@ const Contact = () => {
           </a>
           
           <a 
-            href="https://github.com/Jai496" // Replace with your GitHub URL
+            href="https://github.com/Jai496" // Replace 'your-github-username' with your actual GitHub username
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-slate-300 hover:text-green-400 transition-colors group"

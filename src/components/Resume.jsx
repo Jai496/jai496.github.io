@@ -19,12 +19,15 @@ const Resume = () => {
         </h2>
         
         <div className="bg-slate-900 rounded-lg p-8 shadow-2xl">
-          <div className="aspect-[8.5/11] bg-slate-700 rounded-lg mb-6 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-6xl mb-4">📋</div>
-              <p className="text-slate-400">Resume PDF will be embedded here</p>
-              <p className="text-sm text-slate-500 mt-2">Replace with actual PDF embed or iframe</p>
-            </div>
+          {/* PDF Embed */}
+          <div className="w-full h-[800px] mb-6 rounded-lg overflow-hidden">
+            <iframe
+              src="/resume.pdf"
+              width="100%"
+              height="100%"
+              className="border-0 rounded-lg"
+              title="Resume PDF"
+            />
           </div>
           
           <div className="text-center">
